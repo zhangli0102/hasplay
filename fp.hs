@@ -14,4 +14,9 @@ pal xs =
         True -> "Yeah!"
         False -> "Na Na"
 
-
+beautyIdentifier :: String -> IO()
+beautyIdentifier name =
+    case x of
+        True -> putStrLn "Very beautiful! No.1"
+        False -> putStrLn "Also very beautiful, but only No.2"
+    where x = name == "zhangli"
