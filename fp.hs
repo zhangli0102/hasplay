@@ -20,3 +20,8 @@ beautyIdentifier name =
         True -> putStrLn "Very beautiful! No.1"
         False -> putStrLn "Also very beautiful, but only No.2"
     where x = name == "zhangli"
+
+fibonacci :: Integral a => a -> a
+fibonacci 1 = 1
+fibonacci 2 = 2
+fibonacci n = fibonacci (n-1) + fibonacci (n-2)
