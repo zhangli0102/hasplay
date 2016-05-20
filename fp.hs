@@ -45,3 +45,16 @@ squish (x:xs) = x ++ squish xs
 squishMap :: (a -> [b]) -> [a] -> [b]
 squishMap _ [] = []
 squishMap f (x:xs) = f x ++ squishMap f xs
+
+myOr2 :: [Bool] -> Bool
+myOr2 = foldr (||) False
+
+rvs2 :: [a] -> [a]
+rvs2 = foldl (flip (:)) [] 
+
+myAny2 :: (a -> Bool) -> [a] -> Bool
+myAny2 f = foldr ((||).f) False
+
+myMap :: (a -> b) -> [a] -> [b]
+myMap f = foldr ((:).f) []
+
