@@ -58,3 +58,28 @@ myAny2 f = foldr ((||).f) False
 myMap :: (a -> b) -> [a] -> [b]
 myMap f = foldr ((:).f) []
 
+
+data Price = Price Integer deriving (Show, Eq)
+data Airline = JetBlue | UnitedAirlines | AmericanAirlines deriving (Show, Eq)
+data MoterWerk = BMW | Mercedes | Audi deriving (Show, Eq)
+
+data Vehicle = Car MoterWerk Price | Plane Airline deriving (Show, Eq)
+
+myCar = Car Mercedes (Price 100000)
+myPlane = Plane UnitedAirlines
+
+isCar :: Vehicle -> Bool
+isCar (Car _ _) = True
+isCar _ = False
+
+isPlane :: Vehicle -> Bool
+isPlane (Plane _) = True
+isPlane _ = False
+
+qwCar = Car Audi (Price 50000)
+
+cb :: Vehicle -> MoterWerk
+cb (Car b _) = b
+
+pb :: Vehicle -> Airline
+pb (Plane a) = a
