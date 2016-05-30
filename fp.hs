@@ -83,3 +83,12 @@ cb (Car b _) = b
 
 pb :: Vehicle -> Airline
 pb (Plane a) = a
+
+data Sedan = Sedan deriving Show
+data SUV = SUV deriving Show
+data AutoType = SedanAuto Sedan | SUVAuto SUV deriving Show
+
+type DriverName = String
+data Driver = Driver (DriverName, AutoType)
+
+
