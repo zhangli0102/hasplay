@@ -1,0 +1,39 @@
+[1 of 1] Compiling Main             ( /var/folders/tt/hw80qcl54ln8pcxm4pqqqgtw0000gn/T/cabal-tmp-18674/hspec-discover-2.2.3/dist/dist-sandbox-640fe96d/setup/setup.hs, /var/folders/tt/hw80qcl54ln8pcxm4pqqqgtw0000gn/T/cabal-tmp-18674/hspec-discover-2.2.3/dist/dist-sandbox-640fe96d/setup/Main.o )
+Linking /var/folders/tt/hw80qcl54ln8pcxm4pqqqgtw0000gn/T/cabal-tmp-18674/hspec-discover-2.2.3/dist/dist-sandbox-640fe96d/setup/setup ...
+Configuring hspec-discover-2.2.3...
+Building hspec-discover-2.2.3...
+Preprocessing library hspec-discover-2.2.3...
+[1 of 2] Compiling Test.Hspec.Discover.Config ( src/Test/Hspec/Discover/Config.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Discover/Config.o )
+[2 of 2] Compiling Test.Hspec.Discover.Run ( src/Test/Hspec/Discover/Run.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Discover/Run.o )
+[1 of 2] Compiling Test.Hspec.Discover.Config ( src/Test/Hspec/Discover/Config.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Discover/Config.p_o )
+[2 of 2] Compiling Test.Hspec.Discover.Run ( src/Test/Hspec/Discover/Run.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Discover/Run.p_o )
+In-place registering hspec-discover-2.2.3...
+Preprocessing executable 'hspec-discover' for hspec-discover-2.2.3...
+[1 of 1] Compiling Main             ( driver/hspec-discover.hs, dist/dist-sandbox-640fe96d/build/hspec-discover/hspec-discover-tmp/Main.o )
+Linking dist/dist-sandbox-640fe96d/build/hspec-discover/hspec-discover ...
+Running Haddock for hspec-discover-2.2.3...
+Preprocessing library hspec-discover-2.2.3...
+Haddock coverage:
+  20% (  1 /  5) in 'Test.Hspec.Discover.Config'
+  Missing documentation for:
+    Config (src/Test/Hspec/Discover/Config.hs:14)
+    defaultConfig (src/Test/Hspec/Discover/Config.hs:21)
+    parseConfig (src/Test/Hspec/Discover/Config.hs:35)
+    usage (src/Test/Hspec/Discover/Config.hs:32)
+  40% (  4 / 10) in 'Test.Hspec.Discover.Run'
+  Missing documentation for:
+    run (src/Test/Hspec/Discover/Run.hs:42)
+    Spec (src/Test/Hspec/Discover/Run.hs:37)
+    fileToSpec (src/Test/Hspec/Discover/Run.hs:124)
+    findSpecs (src/Test/Hspec/Discover/Run.hs:119)
+    getFilesRecursive (src/Test/Hspec/Discover/Run.hs:143)
+    driverWithFormatter (src/Test/Hspec/Discover/Run.hs:88)
+Documentation created:
+dist/dist-sandbox-640fe96d/doc/html/hspec-discover/index.html
+Preprocessing executable 'hspec-discover' for hspec-discover-2.2.3...
+Creating package registration file:
+/var/folders/tt/hw80qcl54ln8pcxm4pqqqgtw0000gn/T/pkgConf-hspec-discover-2.21399125485156091745.3
+Installing library in
+/Users/zhangli/hasplay/addition/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/hspec-discover-2.2.3-FNJ6YRJYuqK26Qm4PbUj3z
+Installing executable(s) in /Users/zhangli/hasplay/addition/.cabal-sandbox/bin
+Registering hspec-discover-2.2.3...

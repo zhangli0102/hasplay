@@ -1,0 +1,34 @@
+Configuring hspec-expectations-0.7.2...
+Building hspec-expectations-0.7.2...
+Preprocessing library hspec-expectations-0.7.2...
+[1 of 3] Compiling Test.Hspec.Expectations.Contrib ( src/Test/Hspec/Expectations/Contrib.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Expectations/Contrib.o )
+[2 of 3] Compiling Test.Hspec.Expectations.Matcher ( src/Test/Hspec/Expectations/Matcher.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Expectations/Matcher.o )
+[3 of 3] Compiling Test.Hspec.Expectations ( src/Test/Hspec/Expectations.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Expectations.o )
+[1 of 3] Compiling Test.Hspec.Expectations.Contrib ( src/Test/Hspec/Expectations/Contrib.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Expectations/Contrib.p_o )
+[2 of 3] Compiling Test.Hspec.Expectations.Matcher ( src/Test/Hspec/Expectations/Matcher.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Expectations/Matcher.p_o )
+[3 of 3] Compiling Test.Hspec.Expectations ( src/Test/Hspec/Expectations.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Expectations.p_o )
+In-place registering hspec-expectations-0.7.2...
+Running Haddock for hspec-expectations-0.7.2...
+Preprocessing library hspec-expectations-0.7.2...
+Haddock coverage:
+ 100% (  5 /  5) in 'Test.Hspec.Expectations.Contrib'
+   0% (  0 /  2) in 'Test.Hspec.Expectations.Matcher'
+  Missing documentation for:
+    Module header
+    matchList (src/Test/Hspec/Expectations/Matcher.hs:6)
+  75% ( 21 / 28) in 'Test.Hspec.Expectations'
+  Missing documentation for:
+    Expectation (src/Test/Hspec/Expectations.hs:73)
+    expectationFailure (src/Test/Hspec/Expectations.hs:75)
+    anyException (src/Test/Hspec/Expectations.hs:179)
+    anyErrorCall (src/Test/Hspec/Expectations.hs:182)
+    anyIOException (src/Test/Hspec/Expectations.hs:188)
+    anyArithException (src/Test/Hspec/Expectations.hs:191)
+    errorCall (src/Test/Hspec/Expectations.hs:185)
+Documentation created:
+dist/dist-sandbox-640fe96d/doc/html/hspec-expectations/index.html
+Creating package registration file:
+/var/folders/tt/hw80qcl54ln8pcxm4pqqqgtw0000gn/T/pkgConf-hspec-expectations-0.715519013931617819336.2
+Installing library in
+/Users/zhangli/hasplay/addition/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/hspec-expectations-0.7.2-5zUttaSVxhh4nTCplcUX7p
+Registering hspec-expectations-0.7.2...

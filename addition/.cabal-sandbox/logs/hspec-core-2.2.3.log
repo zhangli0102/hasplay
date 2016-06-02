@@ -1,0 +1,145 @@
+Configuring hspec-core-2.2.3...
+Building hspec-core-2.2.3...
+Preprocessing library hspec-core-2.2.3...
+[ 1 of 17] Compiling Test.Hspec.Timer ( src/Test/Hspec/Timer.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Timer.o )
+[ 2 of 17] Compiling Test.Hspec.Compat ( src/Test/Hspec/Compat.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Compat.o )
+[ 3 of 17] Compiling Test.Hspec.Core.Util ( src/Test/Hspec/Core/Util.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Util.o )
+[ 4 of 17] Compiling Test.Hspec.FailureReport ( src/Test/Hspec/FailureReport.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/FailureReport.o )
+[ 5 of 17] Compiling Test.Hspec.Core.QuickCheckUtil ( src/Test/Hspec/Core/QuickCheckUtil.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/QuickCheckUtil.o )
+[ 6 of 17] Compiling Test.Hspec.Core.Example ( src/Test/Hspec/Core/Example.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Example.o )
+[ 7 of 17] Compiling Test.Hspec.Core.Tree ( src/Test/Hspec/Core/Tree.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Tree.o )
+[ 8 of 17] Compiling Test.Hspec.Core.Spec.Monad ( src/Test/Hspec/Core/Spec/Monad.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Spec/Monad.o )
+[ 9 of 17] Compiling Test.Hspec.Core.Spec ( src/Test/Hspec/Core/Spec.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Spec.o )
+[10 of 17] Compiling Test.Hspec.Core.Hooks ( src/Test/Hspec/Core/Hooks.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Hooks.o )
+[11 of 17] Compiling Test.Hspec.Core.Formatters.Internal ( src/Test/Hspec/Core/Formatters/Internal.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Formatters/Internal.o )
+[12 of 17] Compiling Test.Hspec.Core.Formatters ( src/Test/Hspec/Core/Formatters.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Formatters.o )
+[13 of 17] Compiling Test.Hspec.Options ( src/Test/Hspec/Options.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Options.o )
+[14 of 17] Compiling Test.Hspec.Config ( src/Test/Hspec/Config.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Config.o )
+[15 of 17] Compiling Test.Hspec.Core.Runner.Eval ( src/Test/Hspec/Core/Runner/Eval.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Runner/Eval.o )
+[16 of 17] Compiling Test.Hspec.Core.Runner ( src/Test/Hspec/Core/Runner.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Runner.o )
+[17 of 17] Compiling Test.Hspec.Core.QuickCheck ( src/Test/Hspec/Core/QuickCheck.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/QuickCheck.o )
+[ 1 of 17] Compiling Test.Hspec.Timer ( src/Test/Hspec/Timer.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Timer.p_o )
+[ 2 of 17] Compiling Test.Hspec.Compat ( src/Test/Hspec/Compat.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Compat.p_o )
+[ 3 of 17] Compiling Test.Hspec.Core.Util ( src/Test/Hspec/Core/Util.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Util.p_o )
+[ 4 of 17] Compiling Test.Hspec.FailureReport ( src/Test/Hspec/FailureReport.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/FailureReport.p_o )
+[ 5 of 17] Compiling Test.Hspec.Core.QuickCheckUtil ( src/Test/Hspec/Core/QuickCheckUtil.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/QuickCheckUtil.p_o )
+[ 6 of 17] Compiling Test.Hspec.Core.Example ( src/Test/Hspec/Core/Example.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Example.p_o )
+[ 7 of 17] Compiling Test.Hspec.Core.Tree ( src/Test/Hspec/Core/Tree.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Tree.p_o )
+[ 8 of 17] Compiling Test.Hspec.Core.Spec.Monad ( src/Test/Hspec/Core/Spec/Monad.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Spec/Monad.p_o )
+[ 9 of 17] Compiling Test.Hspec.Core.Spec ( src/Test/Hspec/Core/Spec.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Spec.p_o )
+[10 of 17] Compiling Test.Hspec.Core.Hooks ( src/Test/Hspec/Core/Hooks.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Hooks.p_o )
+[11 of 17] Compiling Test.Hspec.Core.Formatters.Internal ( src/Test/Hspec/Core/Formatters/Internal.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Formatters/Internal.p_o )
+[12 of 17] Compiling Test.Hspec.Core.Formatters ( src/Test/Hspec/Core/Formatters.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Formatters.p_o )
+[13 of 17] Compiling Test.Hspec.Options ( src/Test/Hspec/Options.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Options.p_o )
+[14 of 17] Compiling Test.Hspec.Config ( src/Test/Hspec/Config.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Config.p_o )
+[15 of 17] Compiling Test.Hspec.Core.Runner.Eval ( src/Test/Hspec/Core/Runner/Eval.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Runner/Eval.p_o )
+[16 of 17] Compiling Test.Hspec.Core.Runner ( src/Test/Hspec/Core/Runner.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/Runner.p_o )
+[17 of 17] Compiling Test.Hspec.Core.QuickCheck ( src/Test/Hspec/Core/QuickCheck.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core/QuickCheck.p_o )
+In-place registering hspec-core-2.2.3...
+Running Haddock for hspec-core-2.2.3...
+Preprocessing library hspec-core-2.2.3...
+Haddock coverage:
+   0% (  0 /  2) in 'Test.Hspec.Timer'
+  Missing documentation for:
+    Module header
+    newTimer (src/Test/Hspec/Timer.hs:6)
+  67% (  8 / 12) in 'Test.Hspec.Compat'
+  Missing documentation for:
+    Module header
+    getDefaultConcurrentJobs (src/Test/Hspec/Compat.hs:67)
+    showType (src/Test/Hspec/Compat.hs:112)
+    showFullType (src/Test/Hspec/Compat.hs:121)
+ 100% ( 12 / 12) in 'Test.Hspec.Core.Util'
+   0% (  0 /  4) in 'Test.Hspec.FailureReport'
+  Missing documentation for:
+    Module header
+    FailureReport (src/Test/Hspec/FailureReport.hs:16)
+    writeFailureReport (src/Test/Hspec/FailureReport.hs:24)
+    readFailureReport (src/Test/Hspec/FailureReport.hs:42)
+   0% (  0 /  7) in 'Test.Hspec.Core.QuickCheckUtil'
+  Missing documentation for:
+    Module header
+    aroundProperty (src/Test/Hspec/Core/QuickCheckUtil.hs:24)
+    aroundProp (src/Test/Hspec/Core/QuickCheckUtil.hs:31)
+    aroundRose (src/Test/Hspec/Core/QuickCheckUtil.hs:34)
+    formatNumbers (src/Test/Hspec/Core/QuickCheckUtil.hs:40)
+    newSeed (src/Test/Hspec/Core/QuickCheckUtil.hs:47)
+    mkGen (src/Test/Hspec/Core/QuickCheckUtil.hs:56)
+  50% (  5 / 10) in 'Test.Hspec.Core.Example'
+  Missing documentation for:
+    Module header
+    Params (src/Test/Hspec/Core/Example.hs:37)
+    defaultParams (src/Test/Hspec/Core/Example.hs:42)
+    Progress (src/Test/Hspec/Core/Example.hs:48)
+    ProgressCallback (src/Test/Hspec/Core/Example.hs:49)
+ 100% (  6 /  6) in 'Test.Hspec.Core.Tree'
+  36% (  4 / 11) in 'Test.Hspec.Core.Spec.Monad'
+  Missing documentation for:
+    Module header
+    Spec (src/Test/Hspec/Core/Spec/Monad.hs:25)
+    SpecWith (src/Test/Hspec/Core/Spec/Monad.hs:27)
+    mapSpecTree (src/Test/Hspec/Core/Spec/Monad.hs:52)
+    mapSpecItem (src/Test/Hspec/Core/Spec/Monad.hs:55)
+    mapSpecItem_ (src/Test/Hspec/Core/Spec/Monad.hs:63)
+    modifyParams (src/Test/Hspec/Core/Spec/Monad.hs:66)
+  71% ( 24 / 34) in 'Test.Hspec.Core.Spec'
+  Missing documentation for:
+    Spec (src/Test/Hspec/Core/Spec/Monad.hs:25)
+    SpecWith (src/Test/Hspec/Core/Spec/Monad.hs:27)
+    mapSpecTree (src/Test/Hspec/Core/Spec/Monad.hs:52)
+    mapSpecItem (src/Test/Hspec/Core/Spec/Monad.hs:55)
+    mapSpecItem_ (src/Test/Hspec/Core/Spec/Monad.hs:63)
+    modifyParams (src/Test/Hspec/Core/Spec/Monad.hs:66)
+    Params (src/Test/Hspec/Core/Example.hs:37)
+    defaultParams (src/Test/Hspec/Core/Example.hs:42)
+    Progress (src/Test/Hspec/Core/Example.hs:48)
+    ProgressCallback (src/Test/Hspec/Core/Example.hs:49)
+ 100% ( 13 / 13) in 'Test.Hspec.Core.Hooks'
+  81% ( 22 / 27) in 'Test.Hspec.Core.Formatters.Internal'
+  Missing documentation for:
+    Module header
+    Formatter (src/Test/Hspec/Core/Formatters/Internal.hs:139)
+    FormatM (src/Test/Hspec/Core/Formatters/Internal.hs:87)
+    FailureRecord (src/Test/Hspec/Core/Formatters/Internal.hs:133)
+    runFormatM (src/Test/Hspec/Core/Formatters/Internal.hs:90)
+  77% ( 24 / 31) in 'Test.Hspec.Core.Formatters'
+  Missing documentation for:
+    silent (src/Test/Hspec/Core/Formatters.hs:93)
+    specdoc (src/Test/Hspec/Core/Formatters.hs:107)
+    progress (src/Test/Hspec/Core/Formatters.hs:140)
+    failed_examples (src/Test/Hspec/Core/Formatters.hs:150)
+    Formatter (src/Test/Hspec/Core/Formatters/Internal.hs:139)
+    FormatM (src/Test/Hspec/Core/Formatters/Internal.hs:87)
+    FailureRecord (src/Test/Hspec/Core/Formatters/Internal.hs:133)
+   0% (  0 /  6) in 'Test.Hspec.Options'
+  Missing documentation for:
+    Module header
+    Config (src/Test/Hspec/Options.hs:21)
+    ColorMode (src/Test/Hspec/Options.hs:90)
+    defaultConfig (src/Test/Hspec/Options.hs:44)
+    filterOr (src/Test/Hspec/Options.hs:64)
+    parseOptions (src/Test/Hspec/Options.hs:189)
+  14% (  1 /  7) in 'Test.Hspec.Config'
+  Missing documentation for:
+    Module header
+    Config (src/Test/Hspec/Options.hs:21)
+    ColorMode (src/Test/Hspec/Options.hs:90)
+    defaultConfig (src/Test/Hspec/Options.hs:44)
+    getConfig (src/Test/Hspec/Config.hs:71)
+    configQuickCheckArgs (src/Test/Hspec/Config.hs:50)
+  50% (  1 /  2) in 'Test.Hspec.Core.Runner.Eval'
+  Missing documentation for:
+    Module header
+  77% ( 10 / 13) in 'Test.Hspec.Core.Runner'
+  Missing documentation for:
+    Config (src/Test/Hspec/Options.hs:21)
+    ColorMode (src/Test/Hspec/Options.hs:90)
+    defaultConfig (src/Test/Hspec/Options.hs:44)
+ 100% (  4 /  4) in 'Test.Hspec.Core.QuickCheck'
+Documentation created:
+dist/dist-sandbox-640fe96d/doc/html/hspec-core/index.html
+Creating package registration file:
+/var/folders/tt/hw80qcl54ln8pcxm4pqqqgtw0000gn/T/pkgConf-hspec-core-2.2771515668357571490.3
+Installing library in
+/Users/zhangli/hasplay/addition/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/hspec-core-2.2.3-C7bkVflXJ4DFySJ53yTmFb
+Registering hspec-core-2.2.3...

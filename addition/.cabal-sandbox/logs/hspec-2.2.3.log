@@ -1,0 +1,55 @@
+Configuring hspec-2.2.3...
+Building hspec-2.2.3...
+Preprocessing library hspec-2.2.3...
+[1 of 7] Compiling Test.Hspec.HUnit ( src/Test/Hspec/HUnit.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/HUnit.o )
+[2 of 7] Compiling Test.Hspec.Formatters ( src/Test/Hspec/Formatters.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Formatters.o )
+[3 of 7] Compiling Test.Hspec.Discover ( src/Test/Hspec/Discover.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Discover.o )
+[4 of 7] Compiling Test.Hspec.Runner ( src/Test/Hspec/Runner.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Runner.o )
+[5 of 7] Compiling Test.Hspec.Core  ( src/Test/Hspec/Core.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core.o )
+[6 of 7] Compiling Test.Hspec       ( src/Test/Hspec.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec.o )
+[7 of 7] Compiling Test.Hspec.QuickCheck ( src/Test/Hspec/QuickCheck.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/QuickCheck.o )
+[1 of 7] Compiling Test.Hspec.HUnit ( src/Test/Hspec/HUnit.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/HUnit.p_o )
+[2 of 7] Compiling Test.Hspec.Formatters ( src/Test/Hspec/Formatters.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Formatters.p_o )
+[3 of 7] Compiling Test.Hspec.Discover ( src/Test/Hspec/Discover.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Discover.p_o )
+[4 of 7] Compiling Test.Hspec.Runner ( src/Test/Hspec/Runner.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Runner.p_o )
+[5 of 7] Compiling Test.Hspec.Core  ( src/Test/Hspec/Core.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/Core.p_o )
+[6 of 7] Compiling Test.Hspec       ( src/Test/Hspec.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec.p_o )
+[7 of 7] Compiling Test.Hspec.QuickCheck ( src/Test/Hspec/QuickCheck.hs, dist/dist-sandbox-640fe96d/build/Test/Hspec/QuickCheck.p_o )
+In-place registering hspec-2.2.3...
+Running Haddock for hspec-2.2.3...
+Preprocessing library hspec-2.2.3...
+Haddock coverage:
+  67% (  2 /  3) in 'Test.Hspec.HUnit'
+  Missing documentation for:
+    Module header
+  50% (  1 /  2) in 'Test.Hspec.Formatters'
+  Missing documentation for:
+    Module header
+  38% (  3 /  8) in 'Test.Hspec.Discover'
+  Missing documentation for:
+    Module header
+    Spec
+    IsFormatter (src/Test/Hspec/Discover.hs:26)
+    hspecWithFormatter (src/Test/Hspec/Discover.hs:35)
+    postProcessSpec (src/Test/Hspec/Discover.hs:40)
+  50% (  1 /  2) in 'Test.Hspec.Runner'
+  Missing documentation for:
+    Module header
+  60% (  3 /  5) in 'Test.Hspec.Core'
+  Missing documentation for:
+    describe (src/Test/Hspec/Core.hs:13)
+    it (src/Test/Hspec/Core.hs:17)
+  91% ( 31 / 34) in 'Test.Hspec'
+  Missing documentation for:
+    Spec
+    SpecWith
+    Arg
+  86% (  6 /  7) in 'Test.Hspec.QuickCheck'
+  Missing documentation for:
+    Module header
+Documentation created: dist/dist-sandbox-640fe96d/doc/html/hspec/index.html
+Creating package registration file:
+/var/folders/tt/hw80qcl54ln8pcxm4pqqqgtw0000gn/T/pkgConf-hspec-2.21108728549685118024.3
+Installing library in
+/Users/zhangli/hasplay/addition/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/hspec-2.2.3-BqgL5DqzUSW6oh1uXut8ug
+Registering hspec-2.2.3...
