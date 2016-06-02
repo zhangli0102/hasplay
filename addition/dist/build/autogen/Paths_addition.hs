@@ -17,7 +17,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/Users/zhangli/hasplay/addition/.cabal-sandbox/bin"
-libdir     = "/Users/zhangli/hasplay/addition/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/addition-0.1.0.0-Eu6AI4WWcHXHoJVPdeLlpc"
+libdir     = "/Users/zhangli/hasplay/addition/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/addition-0.1.0.0-Cx9oF76oCcgI1KXxo7aXXn"
 datadir    = "/Users/zhangli/hasplay/addition/.cabal-sandbox/share/x86_64-osx-ghc-7.10.3/addition-0.1.0.0"
 libexecdir = "/Users/zhangli/hasplay/addition/.cabal-sandbox/libexec"
 sysconfdir = "/Users/zhangli/hasplay/addition/.cabal-sandbox/etc"
