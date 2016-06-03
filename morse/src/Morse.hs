@@ -50,4 +50,23 @@ letterToMorse = M.fromList [
     , ('8', "---..")
     , ('9', "----.")
     , ('0', "-----")
-]
+                       ]
+
+morseToLetter :: M.Map Morse Char
+morseToLetter = M.foldWithKey (flip M.insert) M.empty letterToMorse
+
+charToMorse :: Char -> Maybe Morse 
+charToMorse c = M.lookup c letterToMorse
+
+stringToMorse :: String -> Maybe [Morse] 
+stringToMorse s = sequence $ fmap charToMorse s
+
+morseToChar :: Morse -> Maybe Char 
+morseToChar m = M.lookup m morseToLetter
+
+
+
+
+
+
+
