@@ -7,6 +7,8 @@ EXIT=1 #expecting failure
 if [ $value1 -eq $value2 ]; then
   echo Sucessed!
   EXIT=0
+  git tag 01.04.000
+  git push --tags
 else
   echo Failed.
 fi
