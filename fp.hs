@@ -72,6 +72,16 @@ isCar :: Vehicle -> Bool
 isCar (Car _ _) = True
 isCar _ = False
 
+areCars :: [Vehicle] -> Bool
+areCars [] = True
+areCars (x:xs)
+  | isCar x = areCars xs
+  | otherwise = False
+
+getWerk :: Vehicle -> MoterWerk
+getWerk (Car a b) = a
+getWerk _ = error "The input should be a constrctor of Car datatype."
+
 isPlane :: Vehicle -> Bool
 isPlane (Plane _) = True
 isPlane _ = False
@@ -90,5 +100,15 @@ data AutoType = SedanAuto Sedan | SUVAuto SUV deriving Show
 
 type DriverName = String
 data Driver = Driver (DriverName, AutoType)
+
+data JamJars = JamJars {
+	       fruit :: String
+	     , num :: Int
+	     } deriving (Eq, Show, Ord)
+
+peach = JamJars "Peach" 2
+plum = JamJars "Plum" 7
+apple = JamJars "Apple" 5
+blackberry = JamJars "Blackberry" 10
 
 

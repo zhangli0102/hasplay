@@ -50,4 +50,7 @@ repal = unlines . map (\xs -> if isPal xs then "palindrome" else "not a palindro
 isPal :: String -> Bool
 isPal xs = xs == reverse xs
 
-main = interact repal
+reverse' :: [a] -> [a]
+reverse' [] = []
+reverse' (x:xs)
+  | otherwise = reverse' xs ++ [x]
