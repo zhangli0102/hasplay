@@ -116,8 +116,11 @@ type Name = String
  
 data Person = Person Name Age deriving Show
 
-mkPerson :: Name -> Age -> Maybe Person
+data PersonInvalid = NameEmpty | AgeTooLow deriving (Show, Eq)
+
+mkPerson :: Name -> Age -> Either PersonInvalid Person
 mkPerson name age
-  | name /= "" && age >= 0 = Just $ Person name age
-  | otherwise = Nothing
+  | name /= "" && age >= 0 = Right $ Person name age
+  | name == "" = Left NameEmpty
+  | otherwise = Left AgeTooLow
 
