@@ -16,3 +16,7 @@ data Roygbiv = Red
              | Violet
                deriving (Eq, Show)
 
+mySecond :: [a] -> a
+mySecond l@(x:xs)
+  | length l < 2 = error "list too short"
+  | otherwise = head xs
