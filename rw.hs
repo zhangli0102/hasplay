@@ -38,3 +38,36 @@ hui [] = True
 hui (x:xs) 
   | x == last xs = hui.init $ xs
   | otherwise = False
+
+safeHead :: [a] -> Maybe a
+safeHead [] = Nothing
+safeHead (x:xs) = Just x
+
+safeTail :: [a] -> Maybe [a]
+safeTail [] = Nothing
+safeTail (x:xs) = Just xs
+
+safeLast :: [a] -> Maybe a
+safeLast l@(x:xs)
+  | null l = Nothing
+  | null xs = Just x
+  | otherwise = safeLast xs
+
+safeInit :: [a] -> Maybe [a]
+safeInit l@(x:xs)
+  | null l = Nothing
+  | null xs = Just []
+  | otherwise = Just (x : safeInit' xs)
+      where safeInit' m@(y:ys)
+              | null m = []
+              | null ys = []
+              | otherwise = y : safeInit' ys 
+
+splitWith :: (a -> Bool) -> [a] -> [[a]]
+splitWith t l = [take n l, drop n l]
+  where n = cal t l
+            where cal t l@(x:xs)
+                    | t x = 1 + cal t xs
+                    | otherwise = 0
+        
+
