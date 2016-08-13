@@ -1,0 +1,751 @@
+
+==================== FINAL INTERFACE ====================
+2016-07-03 22:45:41.18604 UTC
+
+interface main@main:Morse 7103
+  interface hash: 5211a0fe17280ec02bf6dc65959738fb
+  ABI hash: b3400340ae67665022167c247c4e6078
+  export-list hash: 1480986b6e482e7d1bdf524d02338b62
+  orphan hash: b11eb6367420a84b34d47dccedda6f0c
+  flag hash: 067adc5104262d5c768784a58e120c59
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Morse.charToMorse
+  Morse.letterToMorse
+  Morse.morseToChar
+  Morse.morseToLetter
+  Morse.stringToMorse
+  Morse.Morse
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0* containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+import  -/  base-4.8.2.0:Data.Traversable 7576318f4ef8587ad947f87012b65abf
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map 1800ccac43fd924c376b60eac12f4d04
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base 642e37808d03e24efbe8e8ff1336f343
+d2a5153988ac9390e5f21a8bc09e691b
+  $sfromList ::
+    [(GHC.Types.Char, a)] -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a ds :: [(GHC.Types.Char, a)] ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ GHC.Types.Char @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { GHC.Types.C# ipv ->
+                           Data.Map.Base.Bin
+                             @ GHC.Types.Char
+                             @ a
+                             1
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx of wild4 { GHC.Types.C# c1 ->
+                           case ky of wild5 { GHC.Types.C# c2 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.geChar# c1 c2) of wild6 {
+                             GHC.Types.False
+                             -> Morse.$wpoly_go10
+                                  @ a
+                                  1
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2
+                             GHC.Types.True
+                             -> Morse.$sfromList1
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2 } } } } } } }) -}
+0d2ee415d64e92f9c8b06798a4f128f7
+  $sfromList1 ::
+    Data.Map.Base.Map GHC.Types.Char a1
+    -> [(GHC.Types.Char, a1)] -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+10f4f500dbbf451f51798cdd6691a47b
+  $sinsert_$sgo1 ::
+    Morse.Morse
+    -> a1
+    -> Data.Map.Base.Map Morse.Morse a1
+    -> Data.Map.Base.Map Morse.Morse a1
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+dd53e341b2df817e5e08c7410a189096
+  $slookup1 ::
+    Morse.Morse -> Data.Map.Base.Map Morse.Morse a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+d88fe87d3cb02a45c4f1bbbb0e28c43f
+  $slookup3 ::
+    GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   w :: GHC.Types.Char
+                   w1 :: Data.Map.Base.Map GHC.Types.Char a ->
+                 case w of ww { GHC.Types.C# ww1 ->
+                 Morse.$wpoly_go1 @ a ww1 w1 }) -}
+83b5a19c73ad39027d257ae23a466255
+  $w$sgo10 ::
+    GHC.Prim.Char#
+    -> a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
+a93c753a26a4ca9f691ceb2a42a74a00
+  $wpoly_go1 ::
+    GHC.Prim.Char#
+    -> Data.Map.Base.Map GHC.Types.Char a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+7148475cdc6d1b199fda00f48f13d0b4
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> [(GHC.Types.Char, a)]
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+743841bcf00eaf77661dbd39bbad5ea4
+  type Morse = GHC.Base.String
+aadbf6a5b0cf8dfd1d5166cd67f9b4e2
+  charToMorse :: GHC.Types.Char -> GHC.Base.Maybe Morse.Morse
+  {- Arity: 1, Strictness: <S,1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ c :: GHC.Types.Char ->
+                 Morse.$slookup3 @ [GHC.Types.Char] c Morse.letterToMorse) -}
+bf36d15f7f9ff19e7aac8861d696a567
+  letterToMorse :: Data.Map.Base.Map GHC.Types.Char Morse.Morse
+  {- Unfolding: (Morse.$sfromList
+                   @ [GHC.Types.Char]
+                   Morse.letterToMorse1) -}
+a5ed9b0f4276d7e03bf6d0f6ca37653f
+  letterToMorse1 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse143
+                   Morse.letterToMorse2) -}
+4d248f69a7eab0cbc776be212627190c
+  letterToMorse10 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse119
+                   Morse.letterToMorse11) -}
+aeae4f85ac82a43886394ab8039dbe1b
+  letterToMorse100 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'p') -}
+92c20ef9894f1473579d5cb02823e041
+  letterToMorse101 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse103, Morse.letterToMorse102)) -}
+d984807df9b2034c09cac188608f236c
+  letterToMorse102 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "---"#) -}
+e7f22896a024359825929ac57a0e92d4
+  letterToMorse103 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'o') -}
+1a622ce83dc1ff9b7654a613f828e28b
+  letterToMorse104 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse106, Morse.letterToMorse105)) -}
+7a56ceaae6c8573b0480ef304997a35b
+  letterToMorse105 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-."#) -}
+71420aada3321ad6470bdc4c8c842028
+  letterToMorse106 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'n') -}
+b36d43e9e498120e8ab5c5e1245b91ee
+  letterToMorse107 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse109, Morse.letterToMorse108)) -}
+e06d1156b2230f7f59b7e78a4e17a518
+  letterToMorse108 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "--"#) -}
+2f2fa9cc972f352f8303ed7936465d2f
+  letterToMorse109 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'm') -}
+5ed910405455d9facb9b10209c571a19
+  letterToMorse11 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse116
+                   Morse.letterToMorse12) -}
+48e31c47dd9eeca5e0a48140d2ee2a1a
+  letterToMorse110 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse112, Morse.letterToMorse111)) -}
+4182dbe1de426bf3ba119abd3ab281f5
+  letterToMorse111 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ".-.."#) -}
+58e57895e40ab4d5881d373613c6e84e
+  letterToMorse112 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'l') -}
+552b7164b7beb5ae625ebb1b14aeea4d
+  letterToMorse113 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse115, Morse.letterToMorse114)) -}
+cea063cf06ff54327c4be99843fe948f
+  letterToMorse114 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-.-"#) -}
+079e1fe610927a2ebbb6f7e35a32c8bc
+  letterToMorse115 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'k') -}
+4ddc653bffe349d66946efa3380afa4e
+  letterToMorse116 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse118, Morse.letterToMorse117)) -}
+35f71f825fdc894eddee849b3b6b1482
+  letterToMorse117 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ".---"#) -}
+d402bb0ff8165a3eea62dbb0287a4345
+  letterToMorse118 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'j') -}
+185d22ab42ca6ca89f44f3446d0b3e96
+  letterToMorse119 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse121, Morse.letterToMorse120)) -}
+e575fff9babfb8dc0934211e20e681f5
+  letterToMorse12 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse113
+                   Morse.letterToMorse13) -}
+24e6facf5cd2ed8d9c9b714a79fdfff6
+  letterToMorse120 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ".."#) -}
+787ef2c6815e705c61b7f919f971cb41
+  letterToMorse121 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'i') -}
+03525783ddbda678ae93f393d7ca5f1a
+  letterToMorse122 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse124, Morse.letterToMorse123)) -}
+a9564215315fff704a404a994b5769c0
+  letterToMorse123 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "...."#) -}
+b5e877b357cc0282ba432df56951a80e
+  letterToMorse124 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'h') -}
+6db9ad2fddfdaef5a98a0759122facf6
+  letterToMorse125 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse127, Morse.letterToMorse126)) -}
+07d5f72808f21f3d2efd61fa73bf4824
+  letterToMorse126 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "--."#) -}
+cde21632a3411c1339c1002fe0c632ad
+  letterToMorse127 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'g') -}
+6e77e0942b23a65799e4d7e0551c529e
+  letterToMorse128 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse130, Morse.letterToMorse129)) -}
+b7f0db6b9c78a6a60b06b02cf07cd7b8
+  letterToMorse129 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "..-."#) -}
+564614a0220fbbde0761dcb429524469
+  letterToMorse13 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse110
+                   Morse.letterToMorse14) -}
+8a28efa8d08933f532858a2a918fdada
+  letterToMorse130 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'f') -}
+088f7c63b9ee7024c5294d42b82d8d22
+  letterToMorse131 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse133, Morse.letterToMorse132)) -}
+736fcaf5dde39c5f302466b6e45a7775
+  letterToMorse132 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "."#) -}
+2295330a995c0b6fa22e1b5053b1e8a5
+  letterToMorse133 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'e') -}
+790f4692a6641a662377cc9f607d08ac
+  letterToMorse134 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse136, Morse.letterToMorse135)) -}
+b80c3612a5efe26bf414497f244fe92f
+  letterToMorse135 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-.."#) -}
+da1026d2ee28ae7c9aedec5763c241ef
+  letterToMorse136 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'd') -}
+534d380111f5f4d15ef8d491141cc245
+  letterToMorse137 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse139, Morse.letterToMorse138)) -}
+64996a459db9a0da00c3965a492049a5
+  letterToMorse138 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-.-."#) -}
+5b8945c0dc52f5cbe5e2e06eb86b0f1e
+  letterToMorse139 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'c') -}
+504902d21e62211869fb2f28fd6c0cb7
+  letterToMorse14 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse107
+                   Morse.letterToMorse15) -}
+53bc3b8abf539367193d6255e64b6ba7
+  letterToMorse140 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse142, Morse.letterToMorse141)) -}
+377d96a22b285f02fbbc615afb8b3478
+  letterToMorse141 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-..."#) -}
+d025c0af720adfbe996aaee1d9724eae
+  letterToMorse142 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'b') -}
+7ea20ef859df38dcc3acfd6cc00beae4
+  letterToMorse143 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse145, Morse.letterToMorse144)) -}
+b9692c9c922fae72571b4e2efac36112
+  letterToMorse144 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ".-"#) -}
+cdd1ea97b6591d44ccd6202991b62a7e
+  letterToMorse145 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'a') -}
+8c781d2f91d4d7ec621fbe400abe2e02
+  letterToMorse15 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse104
+                   Morse.letterToMorse16) -}
+037d66591ffc84b6cc3ee84a65f9b64d
+  letterToMorse16 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse101
+                   Morse.letterToMorse17) -}
+1f89a91529b2eb4e0083f0378ee06bff
+  letterToMorse17 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse98
+                   Morse.letterToMorse18) -}
+1be86114136378723b59af3f6c8c66bf
+  letterToMorse18 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse95
+                   Morse.letterToMorse19) -}
+e17f90bc863adc77ed9e15bc34ea5bbd
+  letterToMorse19 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse92
+                   Morse.letterToMorse20) -}
+778ec53940cf9c141b527097dd1c11d5
+  letterToMorse2 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse140
+                   Morse.letterToMorse3) -}
+e2e45213242564e4cde90cf729b806a8
+  letterToMorse20 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse89
+                   Morse.letterToMorse21) -}
+6b8d14853ca05aee09b769be52dc446c
+  letterToMorse21 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse86
+                   Morse.letterToMorse22) -}
+b83046cb899ee731d9409747d207338e
+  letterToMorse22 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse83
+                   Morse.letterToMorse23) -}
+7c00b0c10db7247fb03efd36ee08b3dc
+  letterToMorse23 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse80
+                   Morse.letterToMorse24) -}
+a0553baf299178c8ed745600f3325087
+  letterToMorse24 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse77
+                   Morse.letterToMorse25) -}
+088ff185f34b5fbf8bf8387b4cc6ab27
+  letterToMorse25 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse74
+                   Morse.letterToMorse26) -}
+4c3432df8d27025c608c71636cea144b
+  letterToMorse26 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse71
+                   Morse.letterToMorse27) -}
+cee99cf379df5a39ebcc02cc347cc9da
+  letterToMorse27 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse68
+                   Morse.letterToMorse28) -}
+891e08883caa4accde71010f98f40ee5
+  letterToMorse28 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse65
+                   Morse.letterToMorse29) -}
+e55f1c71f629a52a46c025bd35225ec9
+  letterToMorse29 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse62
+                   Morse.letterToMorse30) -}
+13252d3dcda4915e0ef9bfadb73d43cf
+  letterToMorse3 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse137
+                   Morse.letterToMorse4) -}
+ec187438510492e55bd2bc9cef350bda
+  letterToMorse30 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse59
+                   Morse.letterToMorse31) -}
+8fc709b40019928574df502f4d8f7e97
+  letterToMorse31 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse56
+                   Morse.letterToMorse32) -}
+2e16ea32c202b6774feb1c756069b193
+  letterToMorse32 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse53
+                   Morse.letterToMorse33) -}
+667c8ae91f61f673f887a05be078e5c2
+  letterToMorse33 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse50
+                   Morse.letterToMorse34) -}
+617b09426cf4f3907bc02a03be4222c3
+  letterToMorse34 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse47
+                   Morse.letterToMorse35) -}
+2d86035530ecb3a5428b5fe71003ba8b
+  letterToMorse35 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse44
+                   Morse.letterToMorse36) -}
+5690e9fa8d4efe6b1aaf92d853ce5995
+  letterToMorse36 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse41
+                   Morse.letterToMorse37) -}
+dee38ff0d8513bfb4a473ea7fc81582c
+  letterToMorse37 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse38
+                   (GHC.Types.[] @ (GHC.Types.Char, Morse.Morse))) -}
+7d6cc6f8b59df7a36748987651b99274
+  letterToMorse38 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse40, Morse.letterToMorse39)) -}
+89407323803e19969519dadea61f7ef8
+  letterToMorse39 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-----"#) -}
+1a919ce27b0ba6c6ac40cdc389a5e95d
+  letterToMorse4 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse134
+                   Morse.letterToMorse5) -}
+66b9c0c35a91a1c313744de202baa883
+  letterToMorse40 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '0') -}
+064168ba6ff9f6c43279a49aeb842e04
+  letterToMorse41 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse43, Morse.letterToMorse42)) -}
+036c96051a4fd717db801b455e034bbc
+  letterToMorse42 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "----."#) -}
+768be37a19d95ab20a64e64d0ab06360
+  letterToMorse43 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '9') -}
+3ddc2ff28574b500730845e05b3414f0
+  letterToMorse44 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse46, Morse.letterToMorse45)) -}
+63208de1237e168fa01e4947bdbaa77f
+  letterToMorse45 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "---.."#) -}
+093478b3b0a0ab562f687be53da6497e
+  letterToMorse46 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '8') -}
+a5e875b9b763b06f7a6ae7f66481136e
+  letterToMorse47 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse49, Morse.letterToMorse48)) -}
+dd950bc9ad07707faab6493ea7308c78
+  letterToMorse48 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "--..."#) -}
+fee4366e26fd4f38eaebf4df6ee0ffcc
+  letterToMorse49 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '7') -}
+40a6b1d2d6c5379a41b07a507d06ea65
+  letterToMorse5 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse131
+                   Morse.letterToMorse6) -}
+d9bd83830e4145b8f5ebf38f2fdba642
+  letterToMorse50 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse52, Morse.letterToMorse51)) -}
+8a99cf359a8f6f5614f65120ec020f5b
+  letterToMorse51 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-...."#) -}
+a5c53b9958668580226be165f4668a5a
+  letterToMorse52 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '6') -}
+3bc86344de5f39f7d6e9f554686c23c0
+  letterToMorse53 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse55, Morse.letterToMorse54)) -}
+a7c8eb38669055e93b2d40740b0a1ecc
+  letterToMorse54 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "....."#) -}
+005977f74079b5b03c4c01c648844c79
+  letterToMorse55 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '5') -}
+dbf404fbe3727c0ae7f39da48f2d7eae
+  letterToMorse56 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse58, Morse.letterToMorse57)) -}
+646fe37b2d956ebe9a4921e461b0cabf
+  letterToMorse57 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "....-"#) -}
+e27ae7621ee3dfb0ba708837b7614b31
+  letterToMorse58 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '4') -}
+9e37d8eb92031becfe3a5896a50f8dee
+  letterToMorse59 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse61, Morse.letterToMorse60)) -}
+a5f3c846e381af37cbc5526bc6aedfaf
+  letterToMorse6 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse128
+                   Morse.letterToMorse7) -}
+0e53fa12a8465d963b3ee31b240ebd7f
+  letterToMorse60 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "...--"#) -}
+63edb9cce36c02f895c6374985973004
+  letterToMorse61 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '3') -}
+a26b90f3a4580acb1f241df06fd89739
+  letterToMorse62 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse64, Morse.letterToMorse63)) -}
+127a2b696e2badacc8a0accd61689595
+  letterToMorse63 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "..---"#) -}
+5b5f8ad58566944e00099b388975f6be
+  letterToMorse64 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '2') -}
+4bae379474ec594e5e6db4117d2dc7ef
+  letterToMorse65 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse67, Morse.letterToMorse66)) -}
+8af4223d54fd28c2541bc54ba39943a7
+  letterToMorse66 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ".----"#) -}
+975607ec54a33706a30cc2e98eb25c41
+  letterToMorse67 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '1') -}
+0ccb28f385d45c43a9a6606d96dea538
+  letterToMorse68 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse70, Morse.letterToMorse69)) -}
+33a15eaa874026d4809790be6fa04ed2
+  letterToMorse69 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "--.."#) -}
+196062a4c22c904a130565b6809eca3d
+  letterToMorse7 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse128
+                   Morse.letterToMorse8) -}
+8d43e519fac22f4062493e7cab78aa42
+  letterToMorse70 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'z') -}
+1627e6e897c153f1318b6062406dc997
+  letterToMorse71 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse73, Morse.letterToMorse72)) -}
+4ab663ef3c74cf9b70d64951184b6e27
+  letterToMorse72 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-.--"#) -}
+545ddd307410f165d13012d7c79741b7
+  letterToMorse73 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'y') -}
+b145ef02d3c26a7885e052bfb3aa5fb2
+  letterToMorse74 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse76, Morse.letterToMorse75)) -}
+a178bc40f2ef6105a05ed687897af9d1
+  letterToMorse75 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-..-"#) -}
+e9179df8649100f29aed08f7c0217c29
+  letterToMorse76 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'x') -}
+34362172e36fc8b84322082ad1db8489
+  letterToMorse77 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse79, Morse.letterToMorse78)) -}
+38fd444f2f55738c82a25130a36907e5
+  letterToMorse78 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ".--"#) -}
+f2886b94404f1073529730707be311e2
+  letterToMorse79 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'w') -}
+1bf728ce457b2924c81d4649602d6e79
+  letterToMorse8 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse125
+                   Morse.letterToMorse9) -}
+68e3afddf6314daa3098f88c80a04463
+  letterToMorse80 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse82, Morse.letterToMorse81)) -}
+5a2b3b8f9a5dac99ddb63d6cb5c8656a
+  letterToMorse81 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "...-"#) -}
+f31ccf3770890d5b55904e56d96828f4
+  letterToMorse82 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'v') -}
+9650f904630b09e09cd8a799d559a3c0
+  letterToMorse83 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse85, Morse.letterToMorse84)) -}
+74ed6c1e1e8f5109445fac48a6a80733
+  letterToMorse84 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "..-"#) -}
+0cb24cd52efaebae58e42e8ab2f17cf1
+  letterToMorse85 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'u') -}
+7c1df7fd1b9a061a917da8cb4035abe8
+  letterToMorse86 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse88, Morse.letterToMorse87)) -}
+1f2f8a0ce2cd4c7941d248ec6c9c614d
+  letterToMorse87 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-"#) -}
+4a3a409d0159d417cc265e1e97231b7d
+  letterToMorse88 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 't') -}
+0aedab62d8fc94bf5c58910a31a4fabc
+  letterToMorse89 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse91, Morse.letterToMorse90)) -}
+043e9931b3e6d8838be24582dc1a38d9
+  letterToMorse9 :: [(GHC.Types.Char, Morse.Morse)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, Morse.Morse)
+                   Morse.letterToMorse122
+                   Morse.letterToMorse10) -}
+51ec338d4f01f3884e981437e7038ab0
+  letterToMorse90 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "..."#) -}
+43a5eef5310bd1d06735081df052f2a5
+  letterToMorse91 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 's') -}
+c219823a9d0bc718fc0e308ce86c3454
+  letterToMorse92 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse94, Morse.letterToMorse93)) -}
+1cf194f3f403d6d3fd7848d0d55ef3fb
+  letterToMorse93 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ".-."#) -}
+de88e6aae93f66b2fc6939555c7ee646
+  letterToMorse94 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'r') -}
+8a830344e2d3d4425a568d74c2f49223
+  letterToMorse95 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse97, Morse.letterToMorse96)) -}
+9b46f5d65e7c9b23f787bb6957bea889
+  letterToMorse96 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "--.-"#) -}
+5477d562dd92b2bce67432dfebb57a92
+  letterToMorse97 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'q') -}
+b5d8297abf42fcdc8c5fb49abb0786dc
+  letterToMorse98 :: (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: ((Morse.letterToMorse100, Morse.letterToMorse99)) -}
+8cc5109bc770d4c9bcb8fd2d87ba07a8
+  letterToMorse99 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ".--."#) -}
+ff24aa9470856a8a1ae26b3e91d56be0
+  morseToChar :: Morse.Morse -> GHC.Base.Maybe GHC.Types.Char
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ m :: Morse.Morse ->
+                 Morse.$slookup1 @ GHC.Types.Char m Morse.morseToLetter) -}
+abb22aaf8bc9b00485ddc73fb57804e1
+  morseToLetter :: Data.Map.Base.Map Morse.Morse GHC.Types.Char
+  {- Unfolding: (Morse.morseToLetter_go10
+                   (Data.Map.Base.Tip @ Morse.Morse @ GHC.Types.Char)
+                   Morse.letterToMorse) -}
+8de52f8f57e85e411c2e81e374bdc2f9
+  morseToLetter_go10 ::
+    Data.Map.Base.Map Morse.Morse GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char Morse.Morse
+    -> Data.Map.Base.Map Morse.Morse GHC.Types.Char
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+bc7f130af96c43b458c87b4c186860a4
+  stringToMorse :: GHC.Base.String -> GHC.Base.Maybe [Morse.Morse]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ s :: GHC.Base.String ->
+                 Morse.stringToMorse_go
+                   (GHC.Base.build
+                      @ (GHC.Base.Maybe Morse.Morse)
+                      (\ @ b1
+                         c :: GHC.Base.Maybe Morse.Morse -> b1 -> b1[OneShot]
+                         n :: b1[OneShot] ->
+                       GHC.Base.foldr
+                         @ GHC.Types.Char
+                         @ b1
+                         (GHC.Base.mapFB
+                            @ (GHC.Base.Maybe Morse.Morse)
+                            @ b1
+                            @ GHC.Types.Char
+                            c
+                            Morse.charToMorse)
+                         n
+                         s))) -}
+bf14b891b20decd0db66f2a8fa6558c3
+  stringToMorse_go ::
+    [GHC.Base.Maybe Morse.Morse] -> GHC.Base.Maybe [Morse.Morse]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+"SPEC/Morse fromList @ Char _" [ALWAYS] forall @ a
+                                               $dOrd :: GHC.Classes.Ord GHC.Types.Char
+  Data.Map.Base.fromList @ GHC.Types.Char @ a $dOrd
+  = Morse.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
