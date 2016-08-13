@@ -1,3 +1,5 @@
+import Data.Char(digitToInt)
+
 data MealInfo = Meal {
         mealName :: String
       , mealNumber :: Int
@@ -79,3 +81,10 @@ inner [l@(x:xs), m@(y:ys)]
   | null m = [[]]
   | otherwise = ([x]++[y]) : inner [xs, ys] 
 inner _ = []
+
+asInt xs = loop 0 xs 
+
+loop :: Int -> String -> Int
+loop acc [] = acc
+loop acc (x:xs) = loop (10 * acc + digitToInt x) xs 
+
