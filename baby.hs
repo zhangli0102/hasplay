@@ -248,3 +248,10 @@ fiblist n
   | n <= 0 = error "This should be a positive integer!"
   | n == 1 = [0]
   | otherwise = fiblist (n-1) ++ [fib n]
+
+putString :: String -> IO ()
+putString [] = return ()
+putString (x:xs) = do
+    putChar x
+    putString xs
+
