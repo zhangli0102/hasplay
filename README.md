@@ -1,2 +1,2 @@
 # hasplay
-Just practice haskell skills
+Just practice Haskell skills
