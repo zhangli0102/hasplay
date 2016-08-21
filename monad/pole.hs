@@ -10,3 +10,12 @@ addRight :: Birds -> Pole -> Maybe Pole
 addRight n (l, r)  
   | abs (r + n -l) < 4 = Just (l, r + n)
   | otherwise = Nothing
+
+routine :: Maybe Pole
+routine = do
+  start <- return (0,0)
+  first <- addLeft 2 start
+  second <- addRight 2 first
+  return second
+  
+
