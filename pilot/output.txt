@@ -1,0 +1,6 @@
+Left, 2000meters
+Right, 200meters
+Straight, 20meters
+Straight, 100meters
+Right, 1000meters
+Left, 10000meters
