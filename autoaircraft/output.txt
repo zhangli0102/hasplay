@@ -1,0 +1,4 @@
+The leg 3 needs power.
+The leg 1 needs power.
+The leg 2 needs power.
+The leg 4 needs power.

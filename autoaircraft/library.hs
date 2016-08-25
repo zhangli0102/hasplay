@@ -7,3 +7,6 @@ findLeg f (x:xs)
 
 readFloatList :: [String] -> [Float]
 readFloatList xs = map read xs
+
+myLog :: Int -> String
+myLog n = "The leg " ++ show n ++ " needs power."
