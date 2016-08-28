@@ -14,3 +14,7 @@ data Chuan a = Wu | Jie a (Chuan a)
 instance (Xian a) => Xian (Chuan a) where
   xian Wu = "Kong"
   xian (Jie x xs) = xian x ++ " Jie " ++ xian xs
+
+jia :: Chuan Int -> Int
+jia Wu = 0
+jia (Jie a b) = a + jia b
