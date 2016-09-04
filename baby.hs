@@ -265,3 +265,9 @@ myCompress (x : y : l)
 pack :: (Eq a) => [a] -> [[a]]
 pack [] = []
 pack (x:xs) = (x:takeWhile (==x) xs) : (pack (dropWhile (==x) xs)) 
+
+par :: Eq a => [a] -> (Int, a)
+par xs = (length xs, head xs)
+
+encode :: (Eq a) => [a] -> [(Int,a)]
+encode = map par . pack
