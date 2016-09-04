@@ -255,3 +255,13 @@ putString (x:xs) = do
     putChar x
     putString xs
 
+myCompress :: (Eq a) => [a] -> [a]
+myCompress [] = []
+myCompress [a] = [a]
+myCompress (x : y : l)
+  | x == y = myCompress (y : l)
+  | otherwise = x : myCompress (y : l)
+
+pack :: (Eq a) => [a] -> [[a]]
+pack [] = []
+pack (x:xs) = (x:takeWhile (==x) xs) : (pack (dropWhile (==x) xs)) 
