@@ -281,3 +281,8 @@ split l@(x:xs) n
   | n > 0 = (x:ys, zs)
   | otherwise = ([], l)
   where (ys, zs) = split xs (n-1)
+
+isprime :: Int -> Bool
+isprime n
+  | n < 2 = error "This should be an integer greater than 1."
+  | otherwise = foldr (\e b -> (n `mod` e /= 0) && b) True [2..(n-1)]
