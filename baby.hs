@@ -297,3 +297,6 @@ mygcd m n
 
 coprime :: Int -> Int -> Bool
 coprime m n = mygcd m n == 1
+
+totient :: Int -> Int
+totient n = length . filter (coprime n) $ [1..(n-1)]
