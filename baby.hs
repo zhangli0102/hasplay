@@ -294,3 +294,6 @@ mygcd m n
   | m > n = mygcd (m-n) n
   | m < n = mygcd m (n-m)
   | otherwise = m
+
+coprime :: Int -> Int -> Bool
+coprime m n = mygcd m n == 1
