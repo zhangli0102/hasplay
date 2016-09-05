@@ -271,3 +271,7 @@ par xs = (length xs, head xs)
 
 encode :: (Eq a) => [a] -> [(Int,a)]
 encode = map par . pack
+
+dropE :: [a] -> Int -> [a]
+dropE [] _ = []
+dropE l n = (take n l) ++ dropE (drop (n+1) l) n
