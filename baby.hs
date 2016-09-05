@@ -286,3 +286,11 @@ isprime :: Int -> Bool
 isprime n
   | n < 2 = error "This should be an integer greater than 1."
   | otherwise = foldr (\e b -> (n `mod` e /= 0) && b) True [2..(n-1)]
+
+mygcd :: Int -> Int -> Int
+mygcd m n
+  | m == 0 = n
+  | n == 0 = m
+  | m > n = mygcd (m-n) n
+  | m < n = mygcd m (n-m)
+  | otherwise = m
