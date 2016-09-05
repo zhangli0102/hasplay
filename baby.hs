@@ -275,3 +275,9 @@ encode = map par . pack
 dropE :: [a] -> Int -> [a]
 dropE [] _ = []
 dropE l n = (take n l) ++ dropE (drop (n+1) l) n
+
+split :: [a] -> Int -> ([a], [a])
+split l@(x:xs) n
+  | n > 0 = (x:ys, zs)
+  | otherwise = ([], l)
+  where (ys, zs) = split xs (n-1)
