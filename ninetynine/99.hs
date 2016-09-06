@@ -13,3 +13,13 @@ mirror _ _ = False
 symmetric :: (Tree a) -> Bool
 symmetric Empty = True
 symmetric (Branch _ a b) = mirror a b
+
+add :: (Ord a) => a -> Tree a -> Tree a
+add x Empty = Branch x Empty Empty
+add x t@(Branch y l r) = case compare x y of
+                    LT -> Branch y (add x l) r
+                    GT -> Branch y l (add x r)
+                    EQ -> t
+
+construct :: (Ord a) => [a] -> Tree a
+construct xs = foldl (flip add) Empty xs
