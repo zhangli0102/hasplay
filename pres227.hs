@@ -1,6 +1,7 @@
 prenum :: [String] -> [String]
-prenum [] = []
-prenum strs = prenumber (map show [1..10]) strs
+prenum strs 
+  | strs == [] = []
+  | otherwise = prenumber (map show [1..10]) strs
 
 prenumber :: [String] -> [String] -> [String]
 prenumber [] _ = []
